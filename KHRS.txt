@@ -1,1 +1,14 @@
-saya mau membuat web tentang perpustakaan onlline
+RENCANA KONSEP PROJECT WEBSITE: KHSR DIGITAL LIBRARY
+Sistem Informasi Perpustakaan Asrama KHSR Universitas Muhammadiyah Semarang
+
+Disusun Oleh:
+1. Reva Nandita NIM 13182420002
+2. Intan Nur Aini NIM 13182420014
+3. Qothrunnada Ashfiya 13182420029
+Program Studi S1 Informatika
+Universitas Muhammadiyah Semarang 2026
+
+Latar Belakang
+Perkembangan teknologi informasi saat ini sangat pesat dan telah memberikan banyak kemudahan dalam berbagai bidang, termasuk dalam bidang pendidikan. Salah satu pemanfaatan teknologi informasi adalah dalam sistem pengelolaan perpustakaan.
+Perpustakaan di Asrama K.H Sahlan Rosjidi  Universitas Muhammadiyah Semarang masih menggunakan sistem pencatatan manual dalam pengelolaan buku dan peminjaman. Hal ini sering menimbulkan beberapa masalah seperti kesulitan dalam mencari data buku, pencatatan peminjaman yang kurang terorganisir, serta kemungkinan kehilangan data.
+Oleh karena itu, diperlukan sebuah sistem informasi berbasis website yang dapat membantu pengelolaan perpustakaan menjadi lebih efektif dan efisien. Website ini diberi nama KHSR Digital Library yang berfungsi untuk memudahkan mahasiswa dalam mencari informasi buku serta mempermudah pengelola perpustakaan dalam mengelola data buku dan peminjaman.
