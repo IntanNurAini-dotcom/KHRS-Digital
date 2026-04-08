@@ -8,7 +8,47 @@ Disusun Oleh:
 Program Studi S1 Informatika
 Universitas Muhammadiyah Semarang 2026
 
-Latar Belakang
+# Latar Belakang
 Perkembangan teknologi informasi saat ini sangat pesat dan telah memberikan banyak kemudahan dalam berbagai bidang, termasuk dalam bidang pendidikan. Salah satu pemanfaatan teknologi informasi adalah dalam sistem pengelolaan perpustakaan.
 Perpustakaan di Asrama K.H Sahlan Rosjidi  Universitas Muhammadiyah Semarang masih menggunakan sistem pencatatan manual dalam pengelolaan buku dan peminjaman. Hal ini sering menimbulkan beberapa masalah seperti kesulitan dalam mencari data buku, pencatatan peminjaman yang kurang terorganisir, serta kemungkinan kehilangan data.
 Oleh karena itu, diperlukan sebuah sistem informasi berbasis website yang dapat membantu pengelolaan perpustakaan menjadi lebih efektif dan efisien. Website ini diberi nama KHSR Digital Library yang berfungsi untuk memudahkan mahasiswa dalam mencari informasi buku serta mempermudah pengelola perpustakaan dalam mengelola data buku dan peminjaman.
+
+# Konsep Website
+Website KHSR Digital Library merupakan sebuah sistem informasi perpustakaan berbasis web yang dirancang untuk membantu proses pengelolaan perpustakaan secara digital.
+
+Website ini menyediakan berbagai fitur seperti:
+- Menampilkan katalog buku
+- Pencarian buku
+- Informasi detail buku
+- Sistem peminjaman buku
+- Dashboard admin untuk mengelola data buku
+Dengan adanya website ini, Mahasantri dapat dengan mudah mencari informasi buku secara online tanpa harus datang langsung ke perpustakaan.
+
+# Permasalahan
+Berdasarkan kondisi yang ada, terdapat beberapa permasalahan dalam pengelolaan perpustakaan di Asrama KHSR, yaitu:
+1. Pengelolaan data buku masih dilakukan secara manual.
+2. Mahasiswa kesulitan mengetahui buku yang tersedia di perpustakaan.
+3. Proses pencatatan peminjaman buku masih menggunakan buku catatan.
+4. Data peminjaman buku sulit untuk dicari kembali jika diperlukan.
+
+# Rumusan Masalah
+Berdasarkan permasalahan di atas, maka rumusan masalah dalam proyek ini adalah:
+1. Bagaimana membuat sistem informasi perpustakaan berbasis website?
+2. Bagaimana mempermudah mahasiswa dalam mencari informasi buku?
+3. Bagaimana membantu pengelola perpustakaan dalam mengelola data buku dan peminjaman?
+ 
+# Tujuan Pembuatan Website
+Tujuan dari pembuatan website ini adalah:
+1. Membuat sistem informasi perpustakaan berbasis website.
+2. Mempermudah mahasiswa dalam mencari buku.
+3. Mempermudah pengelolaan data buku dan peminjaman secara digital.
+
+# Solusi
+Solusi yang ditawarkan untuk mengatasi permasalahan tersebut adalah dengan membuat sebuah website bernama KHSR Digital Library.
+Website ini akan menyediakan fitur seperti:
+- Katalog buku online
+- Sistem pencarian buku
+- Informasi detail buku
+- Sistem peminjaman buku
+- Dashboard admin untuk mengelola data buku
+Dengan adanya website ini, pengelolaan perpustakaan akan menjadi lebih terorganisir dan Mahasantri dapat dengan mudah mengakses informasi buku.
