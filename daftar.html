@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar - KHSR Digital Library</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- ICON -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+    <div class="header-top">
+        <div class="logo">
+            <i class="fas fa-book-open"></i>
+            <div>
+                <h2>KHSR Digital Library</h2>
+                <p>Sistem Informasi Perpustakaan Asrama K.H. Sahlan Rosjidi</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav>
+       <div class="menu-cards">
+        <a href="cari.html" class="card blue">
+            <i class="fas fa-search"></i>
+            <h3>Cari Buku</h3>
+            <p>Temukan buku yang Anda butuhkan</p>
+        </a>
+
+        <a href="peminjaman.html" class="card green">
+            <i class="fas fa-file-alt"></i>
+            <h3>Peminjaman</h3>
+            <p>Pinjam dan kembalikan buku</p>
+        </a>
+
+        <a href="daftar.html" class="card purple">
+            <i class="fas fa-book"></i>
+            <h3>Daftar</h3>
+            <p>Daftar sebagai anggota</p>
+        </a>
+
+
+        <a href="#">
+            <i class="fas fa-th-large"></i> Admin
+        </a>
+    </nav>
+</header>
+
+<!-- FORM DAFTAR -->
+<section class="daftar">
+    <div class="form-box">
+
+        <h2><i class="fas fa-user"></i> Form Pendaftaran Mahasantri</h2>
+        <p>Silakan isi data dengan benar</p>
+
+        <form>
+
+            <label>Nama Lengkap</label>
+            <input type="text" placeholder="Masukkan nama lengkap">
+
+            <div class="row">
+                <div>
+                    <label>NIM</label>
+                    <input type="text" placeholder="Nomor Induk Mahasiswa">
+                </div>
+
+                <div>
+                    <label>Program Studi</label>
+                    <select>
+                        <option>Pilih Program Studi</option>
+                        <option>Informatika</option>
+                        <option>Sistem Informasi</option>
+                    </select>
+                </div>
+            </div>
+
+            <label>Email</label>
+            <input type="email" placeholder="email@example.com">
+
+            <label>No. HP</label>
+            <input type="text" placeholder="08xxxxxxxxxx">
+
+            <div class="row">
+                <div>
+                    <label>Username</label>
+                    <input type="text" placeholder="Username">
+                </div>
+
+                <div>
+                    <label>Password</label>
+                    <input type="password" placeholder="********">
+                </div>
+            </div>
+
+            <div class="btn-group">
+                <button type="submit" class="btn-daftar">Daftar</button>
+                <button type="reset" class="btn-reset">Reset</button>
+            </div>
+
+        </form>
+
+    </div>
+</section>
+
+</body>
+</html>

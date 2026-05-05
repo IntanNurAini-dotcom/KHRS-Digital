@@ -132,3 +132,60 @@ nav a.active {
     color: #d63384;
     margin-bottom: 10px;
 }
+.daftar {
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+}
+
+.form-box {
+    background: white;
+    padding: 30px;
+    width: 500px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.form-box h2 {
+    color: #d63384;
+}
+
+.form-box p {
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border: 1px solid #ffb6c1;
+}
+
+.row {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-group {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-daftar {
+    flex: 1;
+    background: #ff1493;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+}
+
+.btn-reset {
+    flex: 1;
+    background: #ddd;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+}
