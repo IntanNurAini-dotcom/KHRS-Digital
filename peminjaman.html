@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Peminjaman Buku</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- ICON -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        .form-container {
+            display: flex;
+            justify-content: center;
+            margin: 40px;
+        }
+
+        .form-box {
+            background: white;
+            padding: 30px;
+            width: 400px;
+            border-radius: 15px;
+            box-shadow: 0 5px 12px rgba(0,0,0,0.1);
+        }
+
+        .form-box h2 {
+            color: #d63384;
+            margin-bottom: 10px;
+        }
+
+        .form-box p {
+            font-size: 13px;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            font-size: 13px;
+        }
+
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+        }
+
+        .row {
+            display: flex;
+            gap: 10px;
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .btn {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            border-radius: 8px;
+            color: white;
+            cursor: pointer;
+        }
+
+        .btn-pinjam { background: #28a745; }
+        .btn-kembali { background: #007bff; }
+        .btn-reset { background: #ccc; color: black; }
+    </style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <div class="header-top">
+        <div class="logo">
+            <i class="fas fa-book-open"></i>
+            <div>
+                <h2>KHSR Digital Library</h2>
+                <p>Sistem Informasi Perpustakaan Asrama K.H. Sahlan Rosjidi</p>
+            </div>
+        </div>
+    </div>
+
+    <nav>
+        <a href="index.html"><i class="fas fa-home"></i> Beranda</a>
+        <a href="cari.html"><i class="fas fa-search"></i> Cari Buku</a>
+        <a href="peminjaman.html" class="active"><i class="fas fa-file-alt"></i> Peminjaman</a>
+        <a><i class="fas fa-book"></i> Daftar</a>
+        <a><i class="fas fa-th-large"></i> Admin</a>
+    </nav>
+</header>
+
+<!-- FORM -->
+<section class="form-container">
+    <div class="form-box">
+
+        <h2><i class="fas fa-file-alt"></i> Form Peminjaman Buku</h2>
+        <p>Catat peminjaman dan pengembalian buku</p>
+
+        <div class="form-group">
+            <label>ID Peminjaman</label>
+            <input type="text" id="id" value="PJ" readonly>
+        </div>
+
+        <div class="row">
+            <div class="form-group">
+                <label>Nama Peminjam</label>
+                <input type="text" id="nama">
+            </div>
+
+            <div class="form-group">
+                <label>NIM</label>
+                <input type="text" id="nim">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Judul Buku</label>
+            <select id="buku">
+                <option>Pilih Buku</option>
+                <option>Pemrograman Web dengan React</option>
+                <option>Database Management System</option>
+                <option>Manajemen Keuangan Islam</option>
+            </select>
+        </div>
+
+        <div class="row">
+            <div class="form-group">
+                <label>Tanggal Pinjam</label>
+                <input type="date" id="pinjam">
+            </div>
+
+            <div class="form-group">
+                <label>Tanggal Kembali</label>
+                <input type="date" id="kembali">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Status</label>
+            <select id="status">
+                <option>Dipinjam</option>
+                <option>Dikembalikan</option>
+            </select>
+        </div>
+
+        <div class="btn-group">
+            <button class="btn btn-pinjam" onclick="pinjam()">Pinjam</button>
+            <button class="btn btn-kembali" onclick="kembali()">Kembalikan</button>
+            <button class="btn btn-reset" onclick="resetForm()">Reset</button>
+        </div>
+
+    </div>
+</section>
+
+<script>
+function pinjam() {
+    alert("Buku berhasil dipinjam!");
+}
+
+function kembali() {
+    alert("Buku berhasil dikembalikan!");
+}
+
+function resetForm() {
+    document.getElementById("nama").value = "";
+    document.getElementById("nim").value = "";
+    document.getElementById("buku").selectedIndex = 0;
+    document.getElementById("pinjam").value = "";
+    document.getElementById("kembali").value = "";
+}
+</script>
+
+</body>
+</html>

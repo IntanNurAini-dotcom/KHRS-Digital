@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Pencarian Buku</title>
+
+    <!-- BASE PATH (BIAR LINK AMAN) -->
+    <base href="./">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- ICON -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+    <div class="header-top">
+        <div class="logo">
+            <i class="fas fa-book-open"></i>
+            <div>
+                <h2>KHSR Digital Library</h2>
+                <p>Sistem Informasi Perpustakaan Asrama K.H. Sahlan Rosjidi</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAVBAR -->
+<nav>
+    <a href="index.html">
+        <i class="fas fa-home"></i> Beranda
+    </a>
+
+    <a href="cari.html">
+        <i class="fas fa-search"></i> Cari Buku
+    </a>
+
+    <a href="peminjaman.html">
+        <i class="fas fa-file-alt"></i> Peminjaman
+    </a>
+
+    <a href="#">
+        <i class="fas fa-book"></i> Daftar
+    </a>
+
+    <a href="#">
+        <i class="fas fa-th-large"></i> Admin
+    </a>
+</nav>
+</header>
+
+<!-- SEARCH -->
+<section class="search-section">
+
+    <div class="search-container">
+        <div class="search-header">
+            <i class="fas fa-search"></i>
+            <div>
+                <h2>Pencarian Buku</h2>
+                <p>Temukan buku berdasarkan judul, penulis, atau kategori</p>
+            </div>
+        </div>
+
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Cari judul, penulis, atau kategori...">
+            <button onclick="cariBuku()">Cari</button>
+        </div>
+    </div>
+
+    <!-- HASIL -->
+    <div id="hasilBuku" class="book-list"></div>
+
+</section>
+
+<script>
+// DATA BUKU
+const dataBuku = [
+    {judul:"Pemrograman Web dengan React", penulis:"Ahmad Fauzi", kategori:"Teknologi", tahun:2023, kode:"B001", stok:5},
+    {judul:"Database Management System", penulis:"Siti Nurhaliza", kategori:"Teknologi", tahun:2022, kode:"B002", stok:3},
+    {judul:"Manajemen Keuangan Islam", penulis:"Dr. Muhammad Amin", kategori:"Ekonomi", tahun:2024, kode:"B003", stok:7},
+    {judul:"Fiqih Muamalah Kontemporer", penulis:"Prof. Abdul Rahman", kategori:"Agama", tahun:2023, kode:"B004", stok:4}
+];
+
+// tampil awal
+tampilkanBuku(dataBuku);
+
+// fungsi pencarian
+function cariBuku() {
+    const keyword = document.getElementById("searchInput").value.toLowerCase();
+
+    const hasil = dataBuku.filter(buku =>
+        buku.judul.toLowerCase().includes(keyword) ||
+        buku.penulis.toLowerCase().includes(keyword) ||
+        buku.kategori.toLowerCase().includes(keyword)
+    );
+
+    tampilkanBuku(hasil);
+}
+
+// tampilkan buku
+function tampilkanBuku(list) {
+    const container = document.getElementById("hasilBuku");
+    container.innerHTML = "";
+
+    if (list.length === 0) {
+        container.innerHTML = "<p>Buku tidak ditemukan</p>";
+        return;
+    }
+
+    list.forEach(buku => {
+        container.innerHTML += `
+        <div class="book-card">
+            <div class="book-left">
+                <div class="book-icon">
+                    <i class="fas fa-book"></i>
+                </div>
+                <div class="book-info">
+                    <h3>${buku.judul}</h3>
+                    <p>oleh ${buku.penulis}</p>
+                    <p>Kode: ${buku.kode} | Tahun: ${buku.tahun}</p>
+                    <p style="color:green;">Tersedia: ${buku.stok} buku</p>
+                </div>
+            </div>
+
+            <div class="book-right">
+                <span class="badge">${buku.kategori}</span>
+            </div>
+        </div>
+        `;
+    });
+}
+
+// BACKUP NAVIGASI (ANTI ERROR)
+function goHome(e) {
+    e.preventDefault();
+    window.location.href = "index.html";
+}
+</script>
+
+</body>
+</html>
