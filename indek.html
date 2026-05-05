@@ -1,40 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - KHRS Digital</title>
-    <link rel="stylesheet" href="indek.css">
+    <title>KHSR Digital Library</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- ICON -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-    <div class="login-container">
-        <h2>Login</h2>
-        <form onsubmit="return login()">
-            <div class="input-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="input-group">
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" required>
-            </div>
-            <button type="submit">Login</button>
-        </form>
-    </div>
-        <script>
-function login() {
-    let email = document.getElementById("email").value;
-    let password = document.getElementById("password").value;
 
-    if(email === "admin@gmail.com" && password === "123"){
-        alert("Login berhasil!");
-        window.location.href = "dashboard.html";
-        return false;
-    } else {
-        alert("Email atau password salah!");
-        return false;
-    }
-}
-</script>
+<!-- HEADER -->
+<header>
+    <div class="header-top">
+        <div class="logo">
+            <i class="fas fa-book-open"></i>
+            <div>
+                <h2>KHSR Digital Library</h2>
+                <p>Sistem Informasi Perpustakaan Asrama K.H. Sahlan Rosjidi</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav>
+        <a class="active"><i class="fas fa-home"></i> Beranda</a>
+        <a><i class="fas fa-search"></i> Cari Buku</a>
+        <a><i class="fas fa-file-alt"></i> Peminjaman</a>
+        <a><i class="fas fa-book"></i> Daftar</a>
+        <a><i class="fas fa-th-large"></i> Admin</a>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <h1>Selamat Datang di KHSR Digital Library</h1>
+    <p>Sistem Informasi Perpustakaan Asrama K.H. Sahlan Rosjidi</p>
+    <small>Universitas Muhammadiyah Semarang</small>
+
+    <div class="menu-cards">
+        <div class="card blue">
+            <i class="fas fa-search"></i>
+            <h3>Cari Buku</h3>
+            <p>Temukan buku yang Anda butuhkan</p>
+        </div>
+
+        <div class="card green">
+            <i class="fas fa-file-alt"></i>
+            <h3>Peminjaman</h3>
+            <p>Pinjam dan kembalikan buku</p>
+        </div>
+
+        <div class="card purple">
+            <i class="fas fa-book"></i>
+            <h3>Daftar</h3>
+            <p>Daftar sebagai anggota</p>
+        </div>
+
+        <div class="card orange">
+            <i class="fas fa-th-large"></i>
+            <h3>Admin</h3>
+            <p>Kelola data perpustakaan</p>
+        </div>
+    </div>
+</section>
+
+<!-- STATS -->
+<section class="stats">
+    <div class="box">
+        <h4>Total Buku</h4>
+        <h2>0</h2>
+    </div>
+
+    <div class="box">
+        <h4>Buku Dipinjam</h4>
+        <h2>0</h2>
+    </div>
+
+    <div class="box">
+        <h4>Anggota Aktif</h4>
+        <h2>0</h2>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about">
+    <h2>Tentang KHSR Digital Library</h2>
+    <p>
+        KHSR Digital Library adalah sistem informasi perpustakaan digital yang dirancang
+        untuk memudahkan mahasantri dalam mencari, meminjam, dan mengelola buku secara online.
+    </p>
+</section>
+
 </body>
 </html>
